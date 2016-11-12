@@ -1,3 +1,3 @@
-# Scroll NYC
+# Mapping Party Juvenil
 
-Repository for the [Scroll NYC web page](http://mgiraldo.github.io/scrollnyc).
+Estableciendo un símil con una red de metro, la Mapping Party Juvenil supone un ejercicio didáctico, en apariencia sencillo, pero lleno de imbricaciones y resultados. Así sobre un escenario pensado al efecto, el Parque de María Luisa, una serie de actores con distintas finalidades, que, en este caso, identificamos con las distintas líneas de la red, van dibujando una serie de itinerarios jalonados por distintos ítems a modo de paradas que, en ocasiones, presentan áreas de confluencia generando una serie de intercambiadores reflejo de las iteraciones establecidas entre los protagonistas.
