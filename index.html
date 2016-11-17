@@ -1,19 +1,13 @@
 <!DOCTYPE html>
-<!--
-
-  Everything in a single HTML page because why not?
-
-  -->
 <html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=4, user-scalable=yes,initial-scale=1.0" />
-
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <title>Scroll Mapping Party Sevilla</title>
-    <meta name="description" content="Playing with old NYC maps.">
+    <title>Mapping Party Juvenil 2014</title>
+    <meta name="description" content="Mapping Party en una red de metro.">
     <script type="text/javascript">
 
 /*! jQuery v1.11.2 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license */
@@ -31,7 +25,11 @@ $.ajax({
     for(var d in data){
       var filename = data[d].replace(extension, "");
       var imageUrl = imagesUrl + '/' + filename + extension;
-      $("#maps").append('<div id=' + filename + ' class="map" style="background-image: url(' + imageUrl + ');"></div>');
+      if(filename === '00_01'){
+        $("#maps").append('<div id=' + filename + ' class="map" style="background-repeat: repeat; background-image: url(' + imageUrl + ');"></div>');
+      }else{
+        $("#maps").append('<div id=' + filename + ' class="map" style="background-image: url(' + imageUrl + ');"></div>');
+      }
     }
     init();
   }
@@ -338,7 +336,6 @@ function gestureStart() {
     background-repeat: no-repeat;
     border-top: 1px solid #000;
     background-size: auto 100%;
-    background-repeat: repeat;
     background-position: center;
   }
 
@@ -443,6 +440,6 @@ function gestureStart() {
     <div class="intro-msg">Estableciendo un símil con una red de metro, la Mapping Party Juvenil supone un ejercicio didáctico, en apariencia sencillo, pero lleno de imbricaciones y resultados. Así sobre un escenario pensado al efecto, el Parque de María Luisa, una serie de actores con distintas finalidades, que, en este caso, identificamos con las distintas líneas de la red, van dibujando una serie de itinerarios jalonados por distintos ítems a modo de paradas que, en ocasiones, presentan áreas de confluencia generando una serie de intercambiadores reflejo de las iteraciones establecidas entre los protagonistas.</div>
     <div class="container"></div>
     <div id="maps"></div>
-    <iframe width="100%" height="800" frameborder="0" src="https://geoinquietossvq.carto.com/viz/d6440320-99fe-11e6-ae52-0e233c30368f/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+    <iframe width="100%" height="1080" frameborder="0" src="https://geoinquietossvq.carto.com/viz/d6440320-99fe-11e6-ae52-0e233c30368f/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
   </body>
 </html>
